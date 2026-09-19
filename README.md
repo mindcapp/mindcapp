@@ -33,7 +33,8 @@
 
 ### `[0x01]` Microservice Runtime
 
-```go
+```
+go
 package main
 
 import (
