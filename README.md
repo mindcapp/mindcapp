@@ -69,7 +69,10 @@ func main() {
 <div align="center">
 
 <img height="165em" src="https://streak-stats.demolab.com?user=mindcapp&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=7EE787&currStreakNum=58A6FF&sideNums=C9D1D9&sideLabels=C9D1D9&dates=8B949E" />
-<img height="165em" src="https://github-readme-stats.salesp07.site/api/top-langs/?username=mindcapp&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" />
+
+<br/><br/>
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=mindcapp&theme=tokyo-night&bg_color=0D1117&color=58A6FF&line=58A6FF&point=7EE787&area=true&hide_border=true" />
 
 </div>
 
