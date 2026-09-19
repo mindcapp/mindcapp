@@ -73,17 +73,19 @@ func main() {
 
 </div>
 
-```text
+```
+text
 [METRIC] COMMIT_STREAK   ───> ACTIVE (streak-tracker.service)
 [METRIC] REPO_INTEGRITY  ───> 100% OK
 [HEALTH] LATENCY         ───> ~24ms (SPb <-> Node)
 [STATUS] OBSERVABILITY   ───> Prometheus / Grafana Exporter UP
-
+```
 ---
 
 ### `[0x03]` Signal Chain & Protocols
 
-```zsh
+```
+zsh
 > routing --inspect
 [TUNNEL]   VLESS-Reality  ──────> [FRANCFORT-NODE] ──> UP (28ms)
 [SERVICE]  Gin / Go Micro ──────> [POSTGRES-POOL]  ──> UP (POOL_MAX: 50)
