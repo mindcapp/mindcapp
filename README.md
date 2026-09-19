@@ -68,8 +68,8 @@ func main() {
 
 <div align="center">
 
-<img height="160em" src="https://github-readme-stats.vercel.app/api?username=mindcapp&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=7EE787&text_color=C9D1D9&count_private=true" />
-<img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mindcapp&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" />
+<img height="165em" src="https://streak-stats.demolab.com?user=mindcapp&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=7EE787&currStreakNum=58A6FF&sideNums=C9D1D9&sideLabels=C9D1D9&dates=8B949E" />
+<img height="165em" src="https://github-readme-stats.salesp07.site/api/top-langs/?username=mindcapp&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" />
 
 </div>
 
