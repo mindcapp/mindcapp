@@ -1,14 +1,13 @@
 <div align="center">
 
-<!-- Динамическая консольная строка (печатается сама в реальном времени) -->
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=560&lines=%3E+paqoe+--init;%3E+loading+kernel+modules...;%3E+starting+axolotl_daemon.service;%3E+status%3A+ACCEPTED" alt="Typing SVG" />
 </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/ROLE-SYSTEM__STAFF-1f242c?style=for-the-badge&logo=gnubash&logoColor=00ADD8" />
-  <img src="https://img.shields.io/badge/RUNTIME-GO__1.23-1f242c?style=for-the-badge&logo=go&logoColor=00ADD8" />
-  <img src="https://img.shields.io/badge/STATUS-ACCEPTED-1f242c?style=for-the-badge&logoColor=7EE787" />
+  <img src="https://img.shields.io/badge/ROLE-SYSTEM__STAFF-1f242c?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=30363d" />
+  <img src="https://img.shields.io/badge/RUNTIME-GO__1.23-1f242c?style=for-the-badge&logo=go&logoColor=00ADD8&labelColor=30363d" />
+  <img src="https://img.shields.io/badge/STATUS-ACCEPTED-238636?style=for-the-badge&labelColor=30363d" />
 </p>
 
 </div>
@@ -18,23 +17,22 @@
 ### `[0x00]` System Info // Neofetch Output
 
 ```text
-       \  |  /        OS:       Darwin / Arch Linux (x86_64)
-      -( • ᴥ • )-     HOST:     mindcapp-core
-       /  |  \        UPTIME:   while(alive) { run(); }
-      <|  |  |>       CORE:     Go (Goroutines & Channels), Low-Level I/O
-        d   b         STORAGE:  PostgreSQL, Redis
-                      TELEMETRY:Prometheus, Grafana, Distributed Tracing
-                      NETWORK:  VLESS-Reality, Proxy Routing, Socket Streams
-                      LOCATION: Saint Petersburg
-                      MASCOT:   axolotl // system_daemon.service [ACTIVE]
+    \  |  /        OS:         Darwin / Arch Linux (x86_64)
+   ~( o.o )~       HOST:       mindcapp-core
+    /  |  \        UPTIME:     while(alive) { run(); }
+     d     b       CORE:       Go (Goroutines & Channels), Low-Level I/O
+                   STORAGE:    PostgreSQL, Redis
+                   TELEMETRY:  Prometheus, Grafana, Distributed Tracing
+                   NETWORK:    Proxy Routing, Socket Streams
+                   LOCATION:   Saint Petersburg
+                   MASCOT:     axolotl // system_daemon.service [ACTIVE]
 ```
 
 ---
 
 ### `[0x01]` Microservice Runtime
 
-```
-go
+```go
 package main
 
 import (
@@ -65,7 +63,15 @@ func main() {
 
 ---
 
-### `[0x02]` Real-Time Telemetry & Profiling
+### `[0x02]` Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=go,postgres,redis,docker,linux,prometheus,grafana,bash,git&theme=dark" />
+</p>
+
+---
+
+### `[0x03]` Real-Time Telemetry
 
 <div align="center">
 
@@ -73,28 +79,37 @@ func main() {
 
 </div>
 
+```text
+$ git log --oneline | wc -l
+[METRIC] COMMIT_STREAK   ───> see card above (streak-stats)
+[METRIC] PUBLIC_REPOS    ───> 7
+[STACK]  OBSERVABILITY   ───> Prometheus / Grafana
 ```
-text
-[METRIC] COMMIT_STREAK   ───> ACTIVE (streak-tracker.service)
-[METRIC] REPO_INTEGRITY  ───> 100% OK
-[HEALTH] LATENCY         ───> ~24ms (SPb <-> Node)
-[STATUS] OBSERVABILITY   ───> Prometheus / Grafana Exporter UP
-```
+
 ---
 
-### `[0x03]` Signal Chain & Protocols
+### `[0x04]` Signal Chain
 
-```
-zsh
-> routing --inspect
-[TUNNEL]   VLESS-Reality  ──────> [FRANCFORT-NODE] ──> UP (28ms)
-[SERVICE]  Gin / Go Micro ──────> [POSTGRES-POOL]  ──> UP (POOL_MAX: 50)
+```zsh
+$ routing --inspect
+[SERVICE]  Gin / Go Micro ──────> [POSTGRES-POOL]  ──> UP
 [MONITOR]  Prometheus Scrape ───> [GRAFANA-DASH]   ──> EXPORT_OK
+[NETWORK]  Proxy Routing ───────> [SOCKET-STREAMS] ──> UP
+```
+
+---
+
+### `[0x05]` Projects
+
+```text
+$ ls -la ~/projects
+drwxr-xr-x  <repo-1>   Go · одна строка, что делает
+drwxr-xr-x  <repo-2>   Go · одна строка, что делает
 ```
 
 ---
 
 <div align="center">
-  <sub>> paqoe --help // READY TO ASSIST TEAMS ON SITE</sub><br/>
-  <sub>BUILD: RELEASE // 55.9301° N, 37.5181° E</sub>
+  <sub>&gt; paqoe --help // READY TO ASSIST TEAMS ON SITE</sub><br/>
+  <sub>BUILD: RELEASE // Saint Petersburg, RU</sub>
 </div>
