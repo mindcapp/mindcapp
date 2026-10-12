@@ -25,7 +25,7 @@
         d   b         STORAGE:  PostgreSQL, Redis
                       TELEMETRY:Prometheus, Grafana, Distributed Tracing
                       NETWORK:  VLESS-Reality, Proxy Routing, Socket Streams
-                      LOCATION: 55.9301° N, 37.5181° E [Dolgoprudny // MIPT]
+                      LOCATION: Saint Petersburg
                       MASCOT:   axolotl // system_daemon.service [ACTIVE]
 ```
 
