@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/ROLE-SYSTEM__STAFF-1f242c?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=30363d" />
-  <img src="https://img.shields.io/badge/RUNTIME-GO__1.23-1f242c?style=for-the-badge&logo=go&logoColor=00ADD8&labelColor=30363d" />
+  <img src="https://img.shields.io/badge/RUNTIME-GO__1.26-1f242c?style=for-the-badge&logo=go&logoColor=00ADD8&labelColor=30363d" />
   <img src="https://img.shields.io/badge/STATUS-ACCEPTED-238636?style=for-the-badge&labelColor=30363d" />
 </p>
 
@@ -20,10 +20,10 @@
     \  |  /        OS:         Darwin / Arch Linux (x86_64)
    ~( o.o )~       HOST:       mindcapp-core
     /  |  \        UPTIME:     while(alive) { run(); }
-     d     b       CORE:       Go (Goroutines & Channels), Low-Level I/O
+     d     b       CORE:       Go (goroutines & channels), net/http, slog
                    STORAGE:    PostgreSQL, Redis
-                   TELEMETRY:  Prometheus, Grafana, Distributed Tracing
-                   NETWORK:    Proxy Routing, Socket Streams
+                   TELEMETRY:  Prometheus, Grafana
+                   DEPLOY:     Docker Compose, systemd, nginx, GitHub Actions
                    LOCATION:   Saint Petersburg
                    MASCOT:     axolotl // system_daemon.service [ACTIVE]
 ```
@@ -51,8 +51,8 @@ func main() {
 	ctx := context.Background()
 	staff := &SystemStaff{
 		Handle:   "paqoe",
-		Role:     "Tech Mentor && System Staff",
-		Stack:    []string{"Go", "PostgreSQL", "Docker", "Prometheus", "Networks"},
+		Role:     "Backend (Go) && InfoSec",
+		Stack:    []string{"Go", "PostgreSQL", "Redis", "Docker", "Prometheus"},
 		Accepted: true,
 	}
 
@@ -66,12 +66,41 @@ func main() {
 ### `[0x02]` Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=go,postgres,redis,docker,linux,prometheus,grafana,bash,git&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=go,postgres,redis,docker,linux,prometheus,grafana,nginx,githubactions,bash,git&theme=dark" />
 </p>
 
 ---
 
-### `[0x03]` Real-Time Telemetry
+### `[0x03]` Projects
+
+```text
+$ ls -la ~/projects
+drwxr-xr-x  song-vibes-check    Go · Redis · singleflight · Prometheus · CI/CD
+drwxr-xr-x  attendance-bot      Go · Telegram · Docker · Grafana   [prod, 33 users]
+drwxr-xr-x  kazakh-name-gen     Go · Gin · PostgreSQL · Prometheus
+```
+
+| Проект | Что делает | Стек |
+| :-- | :-- | :-- |
+| [**song-vibes-check**](https://github.com/mindcapp/song-vibes-check) | Сравнивает две песни по жанровым тегам MusicBrainz: Jaccard и взвешенная схожесть, объяснимый ответ, Redis-кэш с деградацией, лимит 1 req/s и повтор при 503 | Go, Redis, Prometheus, Grafana, GitHub Actions |
+| [**attendance-bot**](https://github.com/mindcapp/attendance-bot) | Telegram-бот учёта посещаемости группы: явка, отчёты в чате и в Excel, напоминания, автодеплой на VPS | Go, Docker, Prometheus, Grafana, GitHub Actions |
+| [**kazakh-name-generator**](https://github.com/mindcapp/kazakh-name-generator) | REST API генерации и хранения казахских имён с метриками и дашбордом | Go, Gin, PostgreSQL, Prometheus |
+
+---
+
+### `[0x04]` Request Trace // song-vibes-check
+
+```zsh
+$ trace POST /compare
+[CACHE]    redis lookup ────────> HIT ──────────────> 200 OK   (~3 ms)
+[MISS]     singleflight ────────> rate limit 1 rps ─> MusicBrainz
+[SCORE]    normalize tags ──────> jaccard + weighted > 200 OK
+[FAIL]     redis down ──────────> bypass cache ─────> still serving
+```
+
+---
+
+### `[0x05]` Telemetry
 
 <div align="center">
 
@@ -79,37 +108,19 @@ func main() {
 
 </div>
 
-```text
-$ git log --oneline | wc -l
-[METRIC] COMMIT_STREAK   ───> see card above (streak-stats)
-[METRIC] PUBLIC_REPOS    ───> 7
-[STACK]  OBSERVABILITY   ───> Prometheus / Grafana
-```
-
 ---
 
-### `[0x04]` Signal Chain
-
-```zsh
-$ routing --inspect
-[SERVICE]  Gin / Go Micro ──────> [POSTGRES-POOL]  ──> UP
-[MONITOR]  Prometheus Scrape ───> [GRAFANA-DASH]   ──> EXPORT_OK
-[NETWORK]  Proxy Routing ───────> [SOCKET-STREAMS] ──> UP
-```
-
----
-
-### `[0x05]` Projects
+### `[0x06]` Security Log
 
 ```text
-$ ls -la ~/projects
-drwxr-xr-x  <repo-1>   Go · одна строка, что делает
-drwxr-xr-x  <repo-2>   Go · одна строка, что делает
+$ cat /var/log/sec.log
+[CTF]      ISPO CTF Cup ─────────> team lead (3 members)
+[STUDY]    SPbSTU (ICST) ────────> ongoing
 ```
 
 ---
 
 <div align="center">
-  <sub>&gt; paqoe --help // READY TO ASSIST TEAMS ON SITE</sub><br/>
+  <sub>&gt; paqoe --help // contact: <a href="https://t.me/paqoe">t.me/paqoe</a></sub><br/>
   <sub>BUILD: RELEASE // Saint Petersburg, RU</sub>
 </div>
