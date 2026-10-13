@@ -114,7 +114,7 @@ $ trace POST /compare
 
 ```text
 $ cat /var/log/sec.log
-[CTF]      ISPO CTF Cup ─────────> team lead (3 members)
+[CTF]      CTF Cup ─────────> team lead (3 members)
 [STUDY]    SPbSTU (ICST) ────────> ongoing
 ```
 
